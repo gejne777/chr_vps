@@ -1,6 +1,6 @@
 #!/bin/bash -e
 sleep 3
-wget https://github.com/elseif/MikroTikPatch/releases/download/7.19/chr-7.19-legacy-bios.img.zip -O chr.img.zip  && \
+wget https://github.com/elseif/MikroTikPatch/releases/download/7.19.2/chr-7.19.2-legacy-bios.vmdk.zip -O chr.img.zip  && \
 gunzip -c chr.img.zip > chr.img  && \
 STORAGE=`lsblk | grep disk | cut -d ' ' -f 1 | head -n 1` && \
 echo STORAGE is $STORAGE && \
